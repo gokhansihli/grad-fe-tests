@@ -1,7 +1,14 @@
 import "./App.css";
+import LoginPage from "./components/test-1/LoginPage";
+import { Routes, Route } from "react-router";
 
 function App() {
-  return <h1>Hello World!</h1>;
+  return (
+    <Routes>
+      <Route path="/" element={<LoginPage />} />
+      <Route path="/test-1" element={<LoginPage />} />
+    </Routes>
+  );
 }
 
 export default App;
