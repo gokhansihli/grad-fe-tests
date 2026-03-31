@@ -1,0 +1,83 @@
+h1 {
+  margin-top: 0.4rem;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+.container {
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  height: 260px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin: 0.4rem 0 0 0;
+  max-width: 8rem;
+  cursor: pointer;
+
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  background-color: #0263b7;
+}
+
+button:hover {
+  background-color: #066ec9;
+}
+
+input {
+  width: 300px;
+  max-width: 30rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding-left: 0.6rem;
+  letter-spacing: 0.04rem;
+
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 4px;
+}
+
+p {
+  margin: 0.2rem 0 0 0;
+  font-size: 0.8rem;
+}
+
+.input-content {
+  min-height: 4rem;
+  height: auto;
+  width: 300px;
+  overflow-wrap: break-word;
+}
+
+.signup {
+  margin: 2rem 0 2rem 0;
+}
