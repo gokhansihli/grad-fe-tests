@@ -9,7 +9,7 @@ export default function MovieSearch() {
       <div>
         <input
           type="text"
-          placeholder="Search by title, Director, Genre or Actor/Actress"
+          placeholder="Search by title, Director, Genre or Actor"
           onChange={(e) => {
             console.log(e.target.value);
             setInput(e.target.value);
