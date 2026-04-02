@@ -12,7 +12,6 @@ export default function MovieSearch() {
           value={input}
           placeholder="Search by title, Director, Genre or Actor"
           onChange={(e) => {
-            // console.log(e.target.value);
             setInput(e.target.value);
           }}
         />
@@ -52,7 +51,7 @@ export default function MovieSearch() {
 
             if (titleInput || directorInput || genreInput || castInput) {
               return (
-                <tr>
+                <tr key={movie.title}>
                   <td>{movie.title}</td>
                   <td>{movie.director}</td>
                   <td>{movie.year}</td>
