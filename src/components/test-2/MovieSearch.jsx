@@ -39,6 +39,10 @@ export default function MovieSearch() {
               .toLowerCase()
               .includes(input.toLowerCase());
 
+            const yearInput = movie.year
+              .toString()
+              .includes(input.toLowerCase());
+
             const castInput = movie.cast.some((actor) => {
               actor.toLowerCase().includes(input.toLowerCase());
             });
@@ -49,7 +53,13 @@ export default function MovieSearch() {
               ratings.reduce((sum, val) => sum + val, 0) / ratings.length
             ).toFixed(2);
 
-            if (titleInput || directorInput || genreInput || castInput) {
+            if (
+              titleInput ||
+              directorInput ||
+              genreInput ||
+              yearInput ||
+              castInput
+            ) {
               return (
                 <tr key={movie.title}>
                   <td>{movie.title}</td>
