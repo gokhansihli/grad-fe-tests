@@ -10,7 +10,7 @@ export default function MovieSearch() {
         <input
           type="text"
           value={input}
-          placeholder="Search by title, Director, Genre or Actor"
+          placeholder="Search movie"
           onChange={(e) => {
             setInput(e.target.value);
           }}
