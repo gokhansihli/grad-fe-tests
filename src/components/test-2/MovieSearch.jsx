@@ -1,5 +1,6 @@
 import { useState } from "react";
 import movieData from "../../movies.json";
+import "./movieSearch.css";
 
 export default function MovieSearch() {
   const [input, setInput] = useState("");
