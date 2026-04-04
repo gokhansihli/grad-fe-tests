@@ -1,9 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import movieData from "../../movies.json";
 import "./movieSearch.css";
 
 export default function MovieSearch() {
   const [input, setInput] = useState("");
+  const [inputDelay, setInputDelay] = useState("");
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setInputDelay(input);
+
+      return () => clearTimeout(timer);
+    }, 500);
+  }, [input]);
 
   return (
     <div className="main-content">
@@ -24,20 +33,22 @@ export default function MovieSearch() {
         {movieData.map((movie) => {
           const titleInput = movie.title
             .toLowerCase()
-            .includes(input.toLowerCase());
+            .includes(inputDelay.toLowerCase());
 
           const directorInput = movie.director
             .toLowerCase()
-            .includes(input.toLowerCase());
+            .includes(inputDelay.toLowerCase());
 
           const genreInput = movie.genre
             .toLowerCase()
-            .includes(input.toLowerCase());
+            .includes(inputDelay.toLowerCase());
 
-          const yearInput = movie.year.toString().includes(input.toLowerCase());
+          const yearInput = movie.year
+            .toString()
+            .includes(inputDelay.toLowerCase());
 
           const castInput = movie.cast.some((actor) =>
-            actor.toLowerCase().includes(input.toLowerCase()),
+            actor.toLowerCase().includes(inputDelay.toLowerCase()),
           );
 
           const ratings = Object.values(movie.ratings).flat();
