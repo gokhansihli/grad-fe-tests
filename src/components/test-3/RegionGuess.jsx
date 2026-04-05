@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { regions } from "./regions";
+import "./regionGuess.css";
 
 export default function RegionGuess() {
   const [answer, setAnswer] = useState("");
