@@ -27,7 +27,7 @@ export default function FindX() {
 
   return (
     <div>
-      <h2>You have found X {found} times!</h2>
+      <strong>{score}</strong>
       <table className="table-container">
         <tbody>
           {newGame.map((row, rowIndex) => {
