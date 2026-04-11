@@ -26,8 +26,8 @@ export default function FindX() {
   }, [found]);
 
   return (
-    <div>
-      <strong>{score}</strong>
+    <div className="content">
+      <strong className="score">{score}</strong>
       <table className="table-container">
         <tbody>
           {newGame.map((row, rowIndex) => {
