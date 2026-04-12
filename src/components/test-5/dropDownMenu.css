@@ -1,0 +1,52 @@
+#menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+#menu li {
+  list-style: none;
+  background-color: blue;
+  padding: 5px 20px;
+  width: 150px;
+  text-align: center;
+}
+
+#menu li ul {
+  margin: 0px;
+  padding: 0px;
+  background-color: blue;
+}
+
+#menu li ul li {
+  color: white;
+  float: none;
+  list-style-type: none;
+  width: auto;
+  margin: 3px 0px 0px 0px;
+  padding: 5px 3px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu .dropDown {
+  position: absolute;
+  display: none;
+  width: 90px;
+}
+
+.menu:hover .dropDown {
+  display: block;
+}
+
+.dropDown a {
+  padding: 0 10px;
+}
