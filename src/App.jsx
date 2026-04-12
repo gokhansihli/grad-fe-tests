@@ -4,6 +4,7 @@ import LoginPage from "./components/test-1/LoginPage";
 import MovieSearch from "./components/test-2/MovieSearch";
 import RegionGuess from "./components/test-3/RegionGuess";
 import FindX from "./components/test-4/FindX";
+import DropDownMenu from "./components/test-5/DropDownMenu";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/test-2" element={<MovieSearch />} />
       <Route path="/test-3" element={<RegionGuess />} />
       <Route path="/test-4" element={<FindX />} />
+      <Route path="/test-5" element={<DropDownMenu />} />
     </Routes>
   );
 }
