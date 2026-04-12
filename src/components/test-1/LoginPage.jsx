@@ -42,7 +42,7 @@ export default function LoginPage() {
       !/[0-9]/.test(password)
     ) {
       setLoginPasswordError(
-        "Week Password! Must include at least 8 characters, one uppercase letter, one lowercase letter, and one number.",
+        "Weak Password! Must include at least 8 characters, one uppercase letter, one lowercase letter, and one number.",
       );
       isLoginValid = false;
     } else setLoginPasswordError("");

@@ -40,7 +40,7 @@ export default function DropDownMenu() {
           <div className="dropDown">
             <ul>
               <li>
-                <a href="https://northcoders.com/">Nortcoders</a>
+                <a href="https://northcoders.com/">Northcoders</a>
               </li>
               <li>
                 <a href="https://www.apple.com/">Apple</a>
