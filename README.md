@@ -1,4 +1,4 @@
-# Frontend Tech Tests
+# Front-end Tech Tests
 
 This repository contains a collection of technical tests I completed following my graduation from **Northcoders**.
 
